@@ -57,3 +57,43 @@ aside > :last-child {
 	- 640px
 	- 1000px
 */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .kontejner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    flex-basis: 30%;
+  }
+  
+  .obsah {
+    flex-basis: 70%;
+  }
+
+  .reklama {
+    flex-basis: 100%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .menu {
+    flex-basis: 20%;
+  }
+
+  .obsah {
+    flex-basis: 60%;
+  }
+
+  .reklama {
+    flex-basis: 20%;
+  }
+}
